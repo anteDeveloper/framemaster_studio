@@ -1,9 +1,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%    ;
-  }
+}
+
 *, *:before, *:after {
-box-sizing: inherit;
+    box-sizing: inherit;
 }
 body {
     font-size: 16px;
@@ -18,30 +19,43 @@ a {
 .container {
     width: 120rem; /*esto es igual a 1200px*/
 }
-.site_header {
+.redes_sociales {
     display: flex;
+    margin: 0 auto;
     justify-content: end;
-    padding: 10px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.redes_sociales a {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.nav-bg {
+    margin-bottom: 10px;
 }
 .navigation {
     display: flex;
     margin: 0 auto;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: end;
 }
 .navigation img {
     width: 80px;
-    height: 80px;
 }
 .navegacion {
     margin-bottom: 20px;
 }
 .menu_principal a {
+    font-size: 20px;
     font-weight: bold;
     padding-left: 20px;
 }
 .menu_principal a:hover {
     text-decoration: underline;
+}
+.hero{
+    margin-left: 20px;
 }
 .hero-img {
     background-image: linear-gradient(
@@ -56,6 +70,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 .hero-text h1 {
     font-size: 100px;
@@ -65,5 +80,65 @@ a {
     -webkit-text-stroke: 2px #ffffff;
     color: transparent;
 }
+.services {
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-bottom: 20px;
+}
+.servicio {
+    padding: 50px;
+}
+.servicio h2{
+    font-size: 16px;
+    text-align: center;
+}
+.servicio img{
+    width: 100%;
+}
+.call_to_action {
+    height: 400px;
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #000000;
+}
 
+.call_to_action h2 {
+    font-size: 50px;
+    text-align: center;
+}
+.call_to_action p{
+    text-align: center;
+    font-style: italic;
+}
+.butt {
+    display: flex;
+    justify-content: center;
+}
+.call_to_action a {
+    padding: 8px 15px;
+    color: #ffffff;
+    background-color: #303030;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    text-align: center;
+}
+.call_to_action a:hover {
+    background-color: #000000;
+}
+.footer_sitio {
+   padding: 10px 10px;
+    display: flex;
+    background-color: #303030;
+    justify-content: space-evenly;
+}
+.footer_sitio p{
+    margin: 0;
+}
+.footer_sitio span {
+    font-weight: bold;
+}
 
